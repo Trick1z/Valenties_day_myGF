@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 1%;
+
+  .card-group {
+    padding: 5rem 0;
+    width: 60rem;
+    height: 50rem;
+    background-color: rgb(127 205 255);
+    border-radius: 3rem;
+    box-shadow: 18px 15px 20px 0px #aaddff;
+
+    display: flex;
+    justify-content: center;
+    .cols {
+      .rows {
+        display: flex;
+        justify-content: center;
+        .pic {
+          border-radius: 20px;
+          overflow: hidden;
+          width: 22rem;
+          height: 28rem;
+          box-shadow: 4px 4px 20px 0px #ffffff;
+          .imgs {
+            border-radius: 20px;
+            width: 22rem;
+            transition: 1s;
+            object-fit: cover;
+          }
+
+          .imgs:hover {
+            transform: scale(1.8);
+            width: 23rem;
+          }
+        }
+        .pic:hover {
+          border-radius: 20px;
+        }
+
+    .numpads{
+        padding-left: 40px;
+        .outputs{
+            .pw-input{
+                border-radius: 20px;
+                width: 19rem;
+                height: 3rem;
+            }
+        }
+
+        .numpad{
+            padding: 20px 0;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3,1fr);
+            .number{
+                margin: 10px 10px;
+                padding: 5px 5px;
+                display: flex;
+                justify-content: center;
+
+                .btns{
+                    background-color: white;
+                    color: #499ad1;
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 15px;
+                    transition: 0.2s;
+                }.btns:hover{
+                    background-color: #6ac0fa;
+                    color: white;
+                    transform: scale(1.05);
+                    box-shadow: 4px 4px 20px 0px #ffffff;
+                }
+            }
+        }
+    }
+      }
+
+      .button-group {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 0 0 0 20px;
+        flex-direction: column;
+        .btns {
+          border-radius: 50px;
+          background-color: white;
+          width: 22rem;
+          height: 3.2rem;
+          transition: 0.5s;
+        }
+        .btns:hover {
+          
+            background-color: #6ac0fa;
+            box-shadow: 4px 4px 20px 0px #ffffff;
+            color: white;
+
+           
+        }
+        
+      }
+    }
+  }
+}

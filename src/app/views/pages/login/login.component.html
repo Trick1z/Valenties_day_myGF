@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="card-group">
+    <div class="cols">
+      <div class="rows">
+        <div class="pic">
+          <img
+            class="imgs"
+            src="../../../../assets/MySource/LINE_ALBUM_เช้า_250201_1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="numpads" *ngIf="numpad_state == true">
+          <div class="outputs">
+            <input
+              [(ngModel)]="password"
+              placeholder="ใส่พาสะเวิร์ดเลยงับบบบ"
+              class="pw-input"
+            />
+          </div>
+          <!-- numpads -->
+          <div class="numpad" >
+            <div class="number" *ngFor="let item of number_pad">
+              <button class="btns" (click)="btn_nums(item)">{{ item }}</button>
+            </div>
+            <div class="number">
+              <button class="btns" (click)="btn_state(true)">enter</button>
+            </div>
+            <div class="number">
+              <button class="btns" (click)="btn_nums(number_zero)">
+                {{ number_zero }}
+              </button>
+            </div>
+            <div class="number">
+              <button class="btns" (click)="btn_state(false)">clear</button>
+            </div>
+          </div>
+
+          <!-- btn -->
+          
+        </div>
+
+        <div class="button-group" *ngIf="go_btn_state == true ">
+          <h1>พร้อมรึยังงับ</h1>
+          <button class="btns">ลุยเยยยย !</button>
+        </div>
+      </div>
+
+      <!-- <div class="button-group" >
+        <button class="btns">Begin our journey</button>
+      </div> -->
+    </div>
+  </div>
+</div>
