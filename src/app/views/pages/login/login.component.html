@@ -18,7 +18,7 @@
             />
           </div>
           <!-- numpads -->
-          <div class="numpad" >
+          <div class="numpad">
             <div class="number" *ngFor="let item of number_pad">
               <button class="btns" (click)="btn_nums(item)">{{ item }}</button>
             </div>
@@ -36,12 +36,22 @@
           </div>
 
           <!-- btn -->
-          
         </div>
 
-        <div class="button-group" *ngIf="go_btn_state == true ">
+        <div class="button-group" *ngIf="go_btn_state == true">
           <h1>พร้อมรึยังงับ</h1>
-          <button class="btns">ลุยเยยยย !</button>
+
+          <div class="" style="display: inline-block">
+            <button
+              class="btns"
+              id="text-btn"
+              (click)="nav_to('./myViews/home-page')"
+            >
+              <label for="text-btn" *ngIf="spinner == false">ลุยเยยยย !</label>
+              <c-spinner *ngIf="spinner == true" variant="grow" color="info" />
+
+            </button>
+          </div>
         </div>
       </div>
 
