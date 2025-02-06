@@ -1,0 +1,105 @@
+.container {
+  .chat-group {
+    margin-top: 50px;
+    width: auto;
+    background-color: #aaddff;
+    padding: 50px 250px;
+    border-radius: 20px;
+
+    .chat-box {
+      box-shadow: 5px 5px 14px #189ef8;
+      border-radius: 20px;
+      background-color: white;
+      
+      .left {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: start;
+      }
+      .right {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 10px;
+      }
+    }
+  }
+
+  .form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+align-items: center;
+    h2{
+        font-size: 40px;
+    }
+
+    h4{
+        background-color: white;
+        padding: 8px;
+        border-radius: 10px;
+
+    }
+  }
+
+
+}
+
+.chat {
+  padding: 0 10px;
+  background-color: rgb(228, 228, 228);
+  border-radius: 50px;
+}
+
+.inp-text{
+width: 30rem;
+height: 3rem;
+    border-radius: 20px;
+}
+
+
+.msg-icon{
+    text-shadow: 2px 2px 13px black;
+    color: white;
+    font-size: 7rem;
+    transition: 1s;
+}
+.msg-icon:hover{
+    margin-left: 20px;
+    transform: scale(1.5);
+    text-shadow: 2px 2px 13px #1fa6ff
+    
+}
+
+
+
+.texts{
+  margin: 2rem 0;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 14px #189ef8;
+}
+
+.spinner{
+  display:flex;
+  justify-content: center;
+
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+}
+
+.arrows{
+
+  transition: 0.5s;
+}
+.arrows:hover{
+
+  transform: scale(1.5);
+}

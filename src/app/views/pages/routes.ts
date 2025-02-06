@@ -16,6 +16,13 @@ export const routes: Routes = [
     }
   },
   {
+    path: 'register',
+    loadComponent: () => import('./register/register.component').then(m => m.RegisterComponent),
+    data: {
+      title: 'Register Page'
+    }
+  },
+  {
     path: 'login',
     loadComponent: () => import('./login/login.component').then(m => m.LoginComponent),
     data: {
@@ -23,10 +30,38 @@ export const routes: Routes = [
     }
   },
   {
-    path: 'register',
-    loadComponent: () => import('./register/register.component').then(m => m.RegisterComponent),
+    path: 'home',
+    loadComponent: () => import('./home/home.component').then(m => m.HomeComponent),
     data: {
-      title: 'Register Page'
+      title: 'Home Page'
     }
-  }
+  },
+  {
+    path: 'second',
+    loadComponent: () => import('./second/second.component').then(m => m.SecondComponent),
+    data: {
+      title: '2nd Page'
+    }
+  },
+  {
+    path: 'third',
+    loadComponent: () => import('./third/third.component').then(m => m.ThirdComponent),
+    data: {
+      title: '3rd Page'
+    }
+  },
+  {
+    path: 'fifth',
+    loadComponent: () => import('./fourth/fourth.component').then(m => m.FourthComponent),
+    data: {
+      title: '4th Page'
+    }
+  },
+  {
+    path: 'fifth',
+    loadComponent: () => import('./fifth/fifth.component').then(m => m.FifthComponent),
+    data: {
+      title: '5th Page'
+    }
+  },
 ];

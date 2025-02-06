@@ -1,20 +1,17 @@
-import { NgIf } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AvatarComponent, SpinnerComponent, SpinnerModule, TextColorDirective } from '@coreui/angular';
-import { sleep } from '../setSleep'
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgIf } from '@angular/common';
+import { AvatarComponent, SpinnerModule, TextColorDirective } from '@coreui/angular';
+import {sleep} from '../../myViews/setSleep'
 @Component({
-  selector: 'app-home-page',
+  selector: 'app-home',
   imports: [NgIf,TextColorDirective, AvatarComponent, SpinnerModule],
-  templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.scss',
-  standalone: true
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
-export class HomePageComponent implements OnInit {
-
-
-  run_time: boolean = false
+export class HomeComponent {
+run_time: boolean = false
   day_now: number = 0
   ngOnInit(): void {
     this.get_days()
@@ -43,9 +40,9 @@ export class HomePageComponent implements OnInit {
 
   async nav_to() {
     this.next_page_state = !this.next_page_state
-    await sleep(2000);
+    await sleep(1000);
     
-    this.nav.navigate(['myViews/ChatsPage']);
+    this.nav.navigateByUrl('second')
 
 
   }
@@ -66,7 +63,5 @@ export class HomePageComponent implements OnInit {
 
 
   next_page_state:boolean =false;
-
-
 
 }

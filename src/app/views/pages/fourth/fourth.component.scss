@@ -1,0 +1,36 @@
+.container {
+
+    .arrows{
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        transition: 1s;
+    }
+    .arrows:hover{
+        margin-top: 20px;
+        transform: scale(1.2);
+        text-shadow: 5px 2px 5px rgb(14, 159, 255);
+    }
+    .header{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        border-radius: 20PX;
+        font-size: 30px;
+    }
+  .grid {
+margin-top: 20px;
+background-color: #aaddff;
+display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-radius: 20px;
+
+
+   
+  }
+}
+ .vid {
+        padding: 20px;
+        border-radius: 20px;
+       
+    }

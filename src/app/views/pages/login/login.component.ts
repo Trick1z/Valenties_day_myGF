@@ -60,9 +60,9 @@ export class LoginComponent {
         Swal.fire({
           position: "center",
           icon: "error",
-          title: "รหัสยังไม่ถูกกก นึกดีดีย์",
+          title: "รหัสยังไม่ถูกกก",
           showConfirmButton: false,
-          timer: 100
+          timer: 1000
         });
       }
     }
@@ -70,8 +70,8 @@ export class LoginComponent {
   spinner: boolean = false
   async nav_to(path: string) {
     this.spinner = true
-    await sleep(2000);
-    this.nav.navigateByUrl('myViews/HomePage')
+    await sleep(1000);
+    this.nav.navigateByUrl('home')
 
 
   }

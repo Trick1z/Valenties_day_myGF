@@ -1,0 +1,27 @@
+.container {
+  background-color: #aaddff;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  flex-direction: column;
+  .group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 40px;
+
+    .vid {
+      border-radius: 20px;
+    }
+  }
+
+  .text {
+    box-shadow: 5px 5px 17px 0px #00a5ff;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 30%;
+    margin-bottom: 50px;
+  }
+}

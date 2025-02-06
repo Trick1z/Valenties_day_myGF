@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="header">
+    <h4>ทุกช่วงเวลาที่อยู่กับหนูพี่มีความสุขมากๆ เลยงับ</h4>
+  </div>
+
+  <h4 class="arrows" (click)="nav_to()">➡</h4>
+  <div class="photo-grid">
+    <div class="photo" *ngFor="let item of pic">
+      <img [src]="item" alt="" />
+    </div>
+  </div>
+</div>

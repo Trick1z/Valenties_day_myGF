@@ -45,11 +45,51 @@ export const routes: Routes = [
       title: 'Login Page'
     }
   },
+  // {
+  //   path: 'register',
+  //   loadComponent: () => import('./views/pages/register/register.component').then(m => m.RegisterComponent),
+  //   data: {
+  //     title: 'Register Page'
+  //   }
+  // },
   {
-    path: 'register',
-    loadComponent: () => import('./views/pages/register/register.component').then(m => m.RegisterComponent),
+    path: 'home',
+    loadComponent: () => import('./views/pages/home/home.component').then(m => m.HomeComponent),
+    canActivate : [authGuard],
     data: {
-      title: 'Register Page'
+      title: 'Home Page'
+    }
+  },
+  {
+    path: 'second',
+    loadComponent: () => import('./views/pages/second/second.component').then(m => m.SecondComponent),
+    canActivate : [authGuard],
+    data: {
+      title: '2nd Page'
+    }
+  },
+  {
+    path: 'third',
+    loadComponent: () => import('./views/pages/third/third.component').then(m => m.ThirdComponent),
+    canActivate : [authGuard],
+    data: {
+      title: '3rd Page'
+    }
+  },
+  {
+    path: 'fourth',
+    loadComponent: () => import('./views/pages/fourth/fourth.component').then(m => m.FourthComponent),
+    canActivate : [authGuard],
+    data: {
+      title: '4th Page'
+    }
+  },
+  {
+    path: 'fifth',
+    loadComponent: () => import('./views/pages/fifth/fifth.component').then(m => m.FifthComponent),
+    canActivate : [authGuard],
+    data: {
+      title: '5th Page'
     }
   },
   { path: '**', redirectTo: 'login' }

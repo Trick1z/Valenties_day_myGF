@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="text">
+      <c-avatar
+        size="xl"
+        src="../../../../assets/chats/Screenshot 2025-02-04 180910.png"
+      />
+  
+      <div class="chats">
+        <h1>อยู่ด้วยกันมาเเล้ว</h1>
+      </div>
+    </div>
+  
+    <div class="days">
+      <h1 (click)="get_days()">{{ day_now }}</h1>
+      <h3>วัน</h3>
+    </div>
+  
+    <div class="text">
+      <c-avatar
+        size="xl"
+        src="../../../../assets/chats/Screenshot 2025-02-04 180910.png"
+      />
+      <div class="chats">
+        <h1>กับอีก</h1>
+      </div>
+    </div>
+  
+    <div class="times">
+      <h1 (click)="get_days()">{{ time_Hour }}</h1>
+      <h3>ชั้วโมง ,</h3>
+  
+      <h1 (click)="get_days()">{{ time_minutess }}</h1>
+      <h3>นาที ,</h3>
+  
+      <h1 (click)="get_days()">{{ time_seconds }}</h1>
+      <h3>วินาที</h3>
+    </div>
+  
+    <!-- <div
+      *ngIf="next_page_state == true"
+      class="spinner"
+      style="display: flex; justify-content: center; margin-bottom: 50px"
+    >
+      <c-spinner />
+    </div>
+    <div *ngIf="next_page_state == false" class="button">asd</div> -->
+  
+  
+    <div class="btn-group">
+      <div *ngIf="next_page_state; else button" class="spinner" style="display: flex; justify-content: center; margin-bottom: 50px">
+        <c-spinner />
+      </div>
+      
+      <ng-template #button>
+        <div (click)="nav_to()" class="btn-group button">➡</div>
+      </ng-template>
+    </div>
+  </div>
+  
